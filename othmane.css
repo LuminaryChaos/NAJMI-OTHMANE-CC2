@@ -1,0 +1,152 @@
+    /* EX1 */
+
+
+            h1{
+                text-align: center;
+                color: red;
+            } 
+            h1:first-of-type{
+                text-shadow: 10px 10px 10px red;
+            }
+
+            h2{
+                text-decoration: underline;
+            }
+            section h2{
+                color: green;
+            }
+
+            h2 + p{
+                color: blue;
+                font-style: italic;
+            }
+
+
+    /* Ex2 */
+
+            .firstdiv{
+                height: 300px;
+                width: 300px;
+                background-color: rgb(29, 191, 224);
+            }
+            .firstdiv:hover{
+                transform: translateX(100px) translateY(100px) rotate(40deg);
+            }
+
+            @media (max-width:700px){
+
+                .firstdiv{
+                    background-color: red;
+                }
+            }
+            @media (min-width:700px) and (max-width:1000px){
+
+                .firstdiv{
+                    background-color: rgb(24, 171, 14);
+                }
+            }
+
+
+    /* Ex3 */
+
+        .container1{
+            background-color: rgb(114, 254, 27);height: 60px;
+        }
+        .container2{
+            display: flex; justify-content: flex-end;align-items: center;text-align: center;
+        }
+        .container2 .A2:hover{
+            background-color: aquamarine;
+        }
+        .container2 .about1{
+            margin-top: 22px;
+            text-align:center;color: black;text-decoration: none;position: absolute; left: 8px; background-color: rgb(24, 187, 89);width: 70px;height: 58px;
+        }
+        .about1:hover{
+            background-color: aquamarine;  
+        }
+
+        .container2 .A2{
+            margin-top: 20px;
+            color: black;margin-left: 40px;  
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    /* EX4 */
+
+
+        .containerpics{
+            margin-left: 400px;
+            height: fit-content;
+            width: 400px;
+            background-color: aqua;
+        }
+        .cont1{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .div1,.div2,.div3,.div4,.div5{
+            width:  70px;
+            height: 70px;
+        }
+        .div1{
+            background-color: red;
+
+        }
+        .div2{
+            background-color: #2cbe92;
+
+        }
+        .div3{
+            background-color: rgb(70, 160, 18);
+
+        }
+        .div4{
+            background-color: rgb(47, 109, 174);
+
+        }
+        .div5{
+            background-color: rgb(141, 36, 165);
+        }
+
+        .cont2{
+            display: flex;
+            justify-content: center;
+        }
+        .cont3{
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+        }
+
+
+    /* EX5 */
+        
+        #boite{
+            background-color: red;
+            position: relative;
+            width: 100px;
+            height: 100px; 
+            animation-name: redBox;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+
+        @keyframes redBox{
+            0%{
+                transform: translateX(10px); 
+            }
+
+            50%{
+                transform: translateX(400px);
+            }
+
+            100%{
+                transform: translateX(0px);
+            }
+
+        }
